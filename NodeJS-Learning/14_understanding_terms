@@ -1,0 +1,100 @@
+What is git and github?
+Git: Git is a distributed version control system for tracking changes in source code during software development. It is designed for coordinating work among programmers, but it can be used to track changes in any set of files. Its goals include speed, data integrity, and support for distributed, non-linear workflows.
+GitHub: GitHub is a web-based Git repository hosting service, which offers all of the distributed revision control and source code management (SCM) functionality of Git as well as adding its own features.
+
+
+What is Express JS?
+Express.js is a Node.js web application server framework, designed for building single-page, multi-page, and hybrid web applications. It is the de facto standard server framework for node.js.
+Several popular Node.js frameworks are built on Express:
+1. LoopBack: Highly-extensible, open-source Node.js framework for quickly creating dynamic end-to-end REST APIs.
+2. Sails: MVC framework for Node.js for building practical, production-ready apps.
+3. Kraken: Secure and scalable layer that extends Express by providing structure and convention.
+4. MEAN: Opinionated fullstack JavaScript framework that simplifies and accelerates web application development.
+
+
+What is API ?
+API stands for Application Programming Interface. In basic terms, APIs are a set of functions and procedures that allow for the creation of applications that access data and features of other applications, services, or operating systems.
+
+
+What is JSON ?
+JSON stands for JavaScript Object Notation
+JSON is a lightweight data-interchange format
+JSON is plain text written in JavaScript object notation
+JSON is used to send data between computers
+JSON is language independent *
+JavaScript has a built in function for converting JSON strings into JavaScript objects:
+JSON.parse()
+JavaScript also has a built in function for converting an object into a JSON string:
+JSON.stringify()
+
+
+What is Heroku ?
+Heroku is a cloud service platform whose popularity has grown in recent years. Heroku is so easy to use that it’s a top choice for many development projects.
+With a special focus on supporting customer-focused apps, it enables simple application development and deployment. Since the Heroku platform manages hardware and servers, businesses that use Heroku are able to focus on perfecting their apps. And not the infrastructure that supports them.
+More time goes towards ensuring that users receive the highest quality experiences as possible.
+
+
+What is SSH key?
+An SSH key is an access credential for the SSH (secure shell) network protocol. This authenticated and encrypted secure network protocol is used for remote communication between machines on an unsecured open network. SSH is used for remote file transfer, network management, and remote operating system access. The SSH acronym is also used to describe a set of tools used to interact with the SSH protocol.
+
+
+How to generate ssh keys on windows?
+open git bash for windows then run below commands
+step1 => ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+step2 => Enter a file in which to save the key (/Users/you/.ssh/id_rsa): [Directly Press enter]
+         Enter passphrase (empty for no passphrase): [Type a passphrase]
+         Enter same passphrase again: [Type passphrase again]
+step3 => $ eval $(ssh-agent -s)
+         Agent pid 59566
+step4 => ssh-add -K /Users/you/.ssh/id_rsa
+
+// In case after step 4 it ask for authenticator password and you don't remember it then directly go to C://User//HP//.ssh  folder and open id_rsa.pub file in notepad and then copy entire thing.
+// Go to github => settings => ssh keys => add any title => add copied ssh key in it
+
+
+What is mongoDB ?
+MongoDB is a document database with the scalability and flexibility that you want with the querying and indexing that you need
+Download it from -> https://www.mongodb.com/try/download/community
+The new version of mongodb comes with inbuilt mongodb gui i.e. mongodb compass.
+// Create a new project on mongo db and after that create a new cluster and then click on connect and then click on mongodb compass connect.
+
+
+What is mongoose ?
+Mongoose provides a straight-forward, schema-based solution to model your application data. It includes built-in type casting, validation, query building, business logic hooks and more, out of the box
+In simple words, Mongoose acts as an intermediate between mongodb and server side language(like NodeJs)
+To get mongoose node module run -> npm i mongoose
+
+
+What is REST API or RESTful API ?
+A REST API (also known as RESTful API) is an application programming interface (API or web API) that conforms to the constraints of REST architectural style and allows for interaction with RESTful web services. REST stands for representational state transfer and was created by computer scientist Roy Fielding.
+
+
+When to use Promise and when to use async-await?
+1. The async function returns a promise. The converse is also true. Every function that returns a promise can be considered as async function.
+2. await is used for calling an async function and waits for it to resolve or reject.
+3. await blocks the execution of the code within the async function in which it is located.
+4. If the output of function2 is dependent on the output of function1, I use await.
+5. If two functions can be run in parallel, create two different async functions and then run them in parallel.
+6. To run promises in parallel, create an array of promises and then use Promise.all(promisesArray).
+7. Every time you use await remember that you are writing blocking code. Over time we tend to neglect this.
+8. Instead of creating huge async functions with many await asyncFunction() in it, it is better to create smaller async functions. This way, we will be aware of not writing too much blocking code.
+9. Another advantage of using smaller async functions is that you force yourself to think of which async functions can be run in parallel.
+10. If your code contains blocking code, it is better to make it an async function. By doing this, you are making sure that somebody else can use your function asynchronously.
+11. By making async functions out of blocking code, you are enabling the user (who will call your function) to decide on the level of asynchronicity they want.
+
+
+
+What is Express middleware ?
+Express middleware are functions that execute during the lifecycle of a request to the Express server. Each middleware has access to the HTTP request and response for each route (or path) it’s attached to. In fact, Express itself is compromised wholly of middleware functions.
+
+
+What is testing a nodejs app and why it is so important?
+
+NodeJS app testing is done through two popular frameworks i.e. jest and mocha
+Jest -> Jest is a delightful JavaScript Testing Framework with a focus on simplicity. It works with projects using: Babel, TypeScript, Node, React, Angular, Vue and more!
+Mocha -> Mocha is a feature-rich JavaScript test framework running on Node.js and in the browser, making asynchronous testing simple and fun. Mocha tests run serially, allowing for flexible and accurate reporting, while mapping uncaught exceptions to the correct test cases.
+
+
+
+
+
